@@ -1,0 +1,19 @@
+ 
+   Incrémentation et décreémentation
+
+   const [level, setLevel] = useState(0)
+ 
+ 
+    <div >
+      <h1>Niveau {level}</h1>
+      <Button className = "button" text="Incrémenter" onClick={() => {
+        setLevel((level) => {
+          return level >= 10 ? level: level + 1
+        })
+      }} />
+      <Button className = "button"  text = "Décrémenter" onClick={() => {
+        setLevel((level) => {
+           return level <= -5 ? level : level - 1
+         })
+       }} />
+    </div>
